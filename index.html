@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>hosting-navbar</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        *{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.login_btn {
+    background-color: #343a40;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 2px 4px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.3s background-color;
+}
+.login_btn:hover{
+    color:#cbd3da ;
+}
+.navbar-toggler{
+    border: none;
+    font-size: 1.25rem;
+    
+}
+.navbar-toggler-icon{
+    background-color: red;
+}
+.navbar-toggler:focus .btn-close:focus{
+    box-shadow: none;
+    outline: none;
+}
+.nav-link{
+    font-size: 16px;
+    font-weight: 600;
+}
+.break{
+    border-right: 1px solid black;
+    margin-top: 8px;   
+    height: 30px;
+}
+.horizontal{
+    border-bottom: 3px solid rgb(192, 185, 185);    
+    width: 100vw;
+   overflow: hidden;
+}
+    </style>
+</head>
+
+<body>
+    <div >
+        <nav class="navbar navbar-expand-lg fixed-top horizontal">
+            <div class="container ">
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="d-flex flex-column position-relative">
+                    <a  class="navbar-brand pb-0 me-auto" href="#">
+                        <span style="font-weight: 600;font-size: 24px;">HOSTING</span>
+                        <span style="font-weight: 600;font-size: 24px; color:red;">RAJA</span>
+                        <span style="font-size: 14px;color: rgb(179, 172, 172); position: absolute;" >
+                            ®
+                        </span>
+                    </a>
+                    <span style="font-size: 13px;font-weight: 500;">No.1 Indian Hosting Company</span>
+                    <span style="font-size: 13px; font-weight: 500;">ISO 9001:2015 Certified</span>
+                </div>
+                <div class="d-flex flex-column ">
+                    <div class=" d-none d-lg-block">
+                        <div class="d-flex gap-2 justify-content-end align-items-center me-4 my-2 ">
+                            <span style="color:#dc3545;font-weight: 600;font-size: 15px;">Tech Support:</span>
+                            <span style="color:#00008b;font-weight: 600;font-size: 15px;"> 080 6225 6100</span>
+                            <a href="#" class="login_btn">Login</a>
+                            <a href="#" class="login_btn">Register</a>
+                        </div>
+                    </div>
+                    <div class=" d-none d-lg-block mb-1">
+                        <div class="d-flex justify-content-end align-items-center gap-1 me-4">
+                            <span style="color:#dc3545;font-weight: 600;font-size: 15px;">New Sales Enquiry :</span>
+                            <span style="color:#00008b;font-weight: 600;font-size: 15px;"> 821 778 4838, 808 801 9021, 636 030
+                                8610</span>
+                            <img style="width: 35px;"
+                                src="https://img.freepik.com/premium-vector/india-flag-vector_58388-145.jpg?">
+                        </div>
+                    </div>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                        aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <div class="d-flex flex-column align-items-center position-relative">
+                                <a  class="navbar-brand pb-0 me-auto" href="#">
+                                    <span style="font-weight: 600;font-size: 24px;">HOSTING</span>
+                                    <span style="font-weight: 600;font-size: 24px; color:red;">RAJA</span>
+                                    <span style="font-size: 14px;color: rgb(179, 172, 172); position: absolute;" >
+                                        ®
+                                    </span>
+                                </a>
+                                <span style="font-size: 13px;font-weight: 500;">No.1 Indian Hosting Company</span>
+                                <span style="font-size: 13px; font-weight: 500;">ISO 9001:2015 Certified</span>
+                            </div>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">    
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                <li class="nav-item">
+                                    <div class="d-flex">
+                                        <a class="nav-link mx-lg-2 active" aria-current="page" href="#">Hosting</a>
+                                        <div class="break d-none d-lg-block"></div>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <div class="d-flex">
+                                        <a class="nav-link mx-lg-2 active" aria-current="page" href="#">Domains</a>
+                                        <div class="break d-none d-lg-block"></div>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <div class="d-flex">
+                                        <a class="nav-link mx-lg-2 active" aria-current="page" href="#">Dedicated
+                                            Server</a>
+                                        <div class="break d-none d-lg-block"></div>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <div class="d-flex">
+                                        <a class="nav-link mx-lg-2 active" aria-current="page" href="#">VPS</a>
+                                        <div class="break d-none d-lg-block"></div>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <div class="d-flex">
+                                        <a class="nav-link mx-lg-2 active" aria-current="page" href="#">Cloud</a>
+                                        <div class="break d-none d-lg-block"></div>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <div class="d-flex">
+                                        <a class="nav-link mx-lg-2 active" aria-current="page" href="#">Servers</a>
+                                        <div class="break d-none d-lg-block"></div>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <div class="d-flex">
+                                        <a class="nav-link mx-lg-2 active" aria-current="page" href="#">Transfer</a>
+                                        <div class="break d-none d-lg-block"></div>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link mx-lg-2 active" aria-current="page" href="#">Services</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>   
+            </div> 
+        </nav>
+        
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
